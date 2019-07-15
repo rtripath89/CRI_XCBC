@@ -8,9 +8,9 @@
 #   - name: yum update
 #     yum: name=* state=latest update_cache=yes
 
-   - fail:
-       msg: "Kernel version mismatch between loaded kernel and group-vars/all! Please fix and run again."
-     when: build_kernel_ver != ansible_kernel
+#   - fail:
+#       msg: "Kernel version mismatch between loaded kernel and group-vars/all! Please fix and run again."
+#     when: build_kernel_ver != ansible_kernel
 
    - name: install necessary stuff
      yum:
