@@ -101,7 +101,7 @@
        state: present
 
    - name: load sacctmgr config
-     command: sacctmgr -i load /etc/slurm/sacctmgr-heirarchy.cfg
+     shell: sleep 20; sacctmgr -i load /etc/slurm/sacctmgr-heirarchy.cfg
 
    - name: start and enable slurmctld
      service: 
