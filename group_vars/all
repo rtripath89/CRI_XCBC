@@ -172,6 +172,8 @@
 
 # Shibboleth SSO
   enable_shib: false
+# Once we refactor the ansible repo for dev and prod variables, we need to remove this variable  
+  dev_shib: true
 
 # User Registration
   enable_user_reg: false
