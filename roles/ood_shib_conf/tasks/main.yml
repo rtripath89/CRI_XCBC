@@ -9,7 +9,7 @@
   unarchive:
     src: "{{ shib_config_files }}"
     dest: /etc/shibboleth/
-    remote_src: "{{ 'no' if dev_shib == 'true' else 'yes'}}"
+    remote_src: no 
 
 - name: Build the updated Apache config
   command: /opt/ood/ood-portal-generator/sbin/update_ood_portal
