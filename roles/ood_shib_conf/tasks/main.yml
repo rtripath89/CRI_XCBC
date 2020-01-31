@@ -7,8 +7,8 @@
 # note testshib.dev.rc.uab.edu is not a real Hostname
 - name: load samltest.id shibboleth config
   unarchive:
-    src: {{ shib_config_files }}
-    dest: /etc/shibboleth/shibboleth2.xml
+    src: "{{ shib_config_files }}"
+    dest: /etc/shibboleth/
     remote_src: "{{ 'no' if dev_shib == 'true' else 'yes'}}"
 
 - name: Build the updated Apache config
